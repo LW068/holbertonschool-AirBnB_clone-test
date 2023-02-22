@@ -1,91 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Task 8 - AirBnB Clone</title>
-	<link rel="stylesheet" type="text/css" href="styles/4-common.css">
-	<link rel="stylesheet" type="text/css" href="styles/3-header.css">
-	<link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-	<link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-	<link rel="stylesheet" type="text/css" href="styles/8-places.css">
-</head>
-<body>
-	<header>
-  <div class="container">
-    <div class="logo">
-      <a href="#"> 
-        <img src="../images/logo.png" alt="logo">
-      </a>
-    </div>
-    <div class="title">
-      <h1>Holberton School Airbnb Clone</h1>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Places</a></li>
-        <li><a href="#">Amenities</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About us</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-		<section class="filters">
-  <div class="guests">
-    <button class="filter-button">Guests</button>
-    <div class="popover">
-      <ul>
-        <li>1 guest</li>
-        <li>2 guests</li>
-        <li>3 guests</li>
-        <li>4 guests</li>
-        <li>5 guests</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="rooms">
-    <button class="filter-button">Rooms</button>
-    <div class="popover">
-      <ul>
-        <li>1 room</li>
-        <li>2 rooms</li>
-        <li>3 rooms</li>
-        <li>4 rooms</li>
-        <li>5 rooms</li>
-      </ul>
-    </div>
-  </div>
-<div class="price">
-    <button class="filter-button">Price</button>
-    <div class="popover">
-      <ul>
-        <li>$50 - $100</li>
-        <li>$100 - $150</li>
-        <li>$150 - $200</li>
-        <li>$200+</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="places">
-		<article>
-			<h2>Place Name</h2>
-			<div class="price_by_night">Price by night</div>
-			<div class="information">
-				<div class="max_guest">Number of guests</div>
-				<div class="number_rooms">Number of bedrooms</div>
-				<div class="number_bathrooms">Number of bathrooms</div>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Web Static Airbnb Clone - Task 8</title>
+		<link rel="stylesheet" href="styles/4-common.css">
+		<link rel="stylesheet" href="styles/3-header.css">
+		<link rel="stylesheet" href="styles/3-footer.css">
+		<link rel="stylesheet" href="styles/6-filters.css">
+		<link rel="stylesheet" href="styles/8-places.css">
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<a href="#">
+					<span class="logo"></span>
+				</a>
 			</div>
-			<div class="user">Owner: <b>Owner name</b></div>
-			<div class="description">Description of place goes here</div>
-		</article>
-	</section>
-<footer>
+		</header>
+		<div class="container">
+			<section class="filters">
+				<div class="locations">
+					<h3>States</h3>
+					<h4><input type="checkbox" name="state[]" value="CA"> California</h4>
+					<h4><input type="checkbox" name="state[]" value="NV"> Nevada</h4>
+					<h4><input type="checkbox" name="state[]" value="OR"> Oregon</h4>
+					<h4><input type="checkbox" name="state[]" value="WA"> Washington</h4>
+				</div>
+				<div class="amenities">
+					<h3>Amenities</h3>
+					<h4><input type="checkbox" name="amenity[]" value="Wifi"> Wifi</h4>
+					<h4><input type="checkbox" name="amenity[]" value="Shower"> Shower</h4>
+					<h4><input type="checkbox" name="amenity[]" value="Pool"> Pool</h4>
+					<h4><input type="checkbox" name="amenity[]" value="TV"> TV</h4>
+				</div>
+				<button>Search</button>
+			</section>
+			<section class="places">
+				<article>
+					<div class="title">
+						<h2>PLACE NAME</h2>
+						<div class="price_by_night"> $100 </div>
+					</div>
+					<div class="information">
+						<div class="max_guest">
+							<div class="icon"><img src="images/guest_icon.png"></div>
+							2 Guests
+						</div>
+						<div class="number_rooms">
+							<div class="icon"><img src="images/bed_icon.png"></div>
+							2 Bedrooms
+						</div>
+						<div class="number_bathrooms">
+							<div class="icon"><img src="images/bath_icon.png"></div>
+							1 Bathroom
+						</div>
+					</div>
+					<div class="user">
+						<strong>Owner: </strong> John Doe
+					</div>
+					<div class="description">
+						Description of the place
+					</div>
+				</article>
+			</section>
+		</div>
 		<footer>
-  <div class="container">
-      <p>Best School</p>
-</footer>
-
-	</footer>
-</body>
+			Best School
+		</footer>
+	</body>
 </html>
