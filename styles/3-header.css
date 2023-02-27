@@ -1,22 +1,14 @@
 header {
-	background-color: #333333;
-	height: 70px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #CCCCCC;
+    background: #ffffff;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
 }
-
-.logo-container {
-	display: flex;
-	align-items: center;
-	margin-left: 20px;
-}
-
-.logo-container span {
-	margin-left: 10px;
-	font-size: 24px;
-	font-weight: bold;
-	color: white;
+/* Estilo para el logo */
+header .logo {
+  background: url("..images/logo.png") no-repeat;
+  height: 100%;
+  margin-left: 20px;
 }
