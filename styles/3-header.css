@@ -6,9 +6,8 @@ header {
     display: flex;
     align-items: center;
 }
-/* Estilo para el logo */
 header .logo {
-  background: url("..images/logo.png") no-repeat;
+  bbackground-image: url('../images/logo.png');
   height: 100%;
   margin-left: 20px;
 }
